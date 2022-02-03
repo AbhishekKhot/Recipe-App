@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Standard/app/src/main/res/layout-v23/fragment_category_detail.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_categories.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_category_detail.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_dashboard.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_favorites.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_notifications.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_photo_recipe.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_recipe_detail.xml" value="0.1" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_search.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/fragment_web_detail.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/list_view_home_category.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/search_bar.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/text_view_header.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_direction.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_empty.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_error.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_favorite_recipe.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_home_category.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_ingredient.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_onboarding_item.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_recipe.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/layout/view_spin_indicator.xml" value="0.1796875" />
+        <entry key="..\:/Standard/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

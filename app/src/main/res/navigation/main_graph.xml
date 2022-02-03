@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/categoriesFragment">
+
+<!--    <fragment-->
+<!--    mobile_navigation-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:name="com.example.standard.ui.home.HomeFragment"-->
+<!--        android:label="@string/title_home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_dashboard"-->
+<!--        android:name="com.example.standard.ui.dashboard.DashboardFragment"-->
+<!--        android:label="@string/title_dashboard"-->
+<!--        tools:layout="@layout/fragment_dashboard" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_notifications"-->
+<!--        android:name="com.example.standard.ui.notifications.NotificationsFragment"-->
+<!--        android:label="@string/title_notifications"-->
+<!--        tools:layout="@layout/fragment_notifications" />-->
+
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.standard.ui.categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_categoryDetailFragment"
+            app:destination="@id/categoryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.standard.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.standard.ui.favorities.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/categoryDetailFragment"
+        android:name="com.example.standard.ui.categories.CategoryDetailFragment"
+        android:label="fragment_category_detail"
+        tools:layout="@layout/fragment_category_detail" >
+        <argument
+            android:name="category"
+            app:argType="com.example.standard.features.categories.domain.model.CategoryItem"/>
+    </fragment>
+    <fragment
+        android:id="@+id/webDetailFragment"
+        android:name="com.example.standard.ui.detail.WebDetailFragment"
+        android:label="fragment_web_detail"
+        tools:layout="@layout/fragment_web_detail" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoRecipeFragment"
+        android:name="com.example.standard.ui.detail.PhotoRecipeFragment"
+        android:label="fragment_photo_recipe"
+        tools:layout="@layout/fragment_photo_recipe" >
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.example.standard.ui.detail.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" >
+        <action
+            android:id="@+id/action_recipeDetailFragment_to_photoRecipeFragment"
+            app:destination="@id/photoRecipeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_recipeDetailFragment_to_webDetailFragment"
+            app:destination="@id/webDetailFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/scale_move_out"
+            app:popEnterAnim="@anim/scale_move_in"
+            app:popExitAnim="@anim/slide_out_down" />
+        <argument
+            android:name="transitionName"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="roka.recipes/{id}?arg1={transitionName}" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_recipeDetailFragment"
+        app:destination="@id/recipeDetailFragment" />
+</navigation>
