@@ -1,14 +1,14 @@
 package com.example.standard.core.data.network.client
 
-import com.example.standard.core.constants.K
-import com.example.standard.core.constants.K.API_KEY
-import com.example.standard.core.data.network.services.RecipeService
+import com.example.standard.core.constants.AppConstants.API_KEY
+import com.example.standard.core.constants.AppConstants.BASE_URL
+import com.example.standard.core.data.network.services.RecipeAPI
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RecipesApiClient {
+object RetrofitApiClient {
     private fun getHttpClient(): OkHttpClient {
         val requestInterceptor = Interceptor { chain ->
             val url = chain.request()
@@ -31,12 +31,12 @@ object RecipesApiClient {
         return httpClient.build()
     }
 
-    fun createRecipeService(): RecipeService {
+    fun createRecipeService(): RecipeAPI {
         return Retrofit.Builder()
             .client(getHttpClient())
-            .baseUrl(K.BASE_URL)
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(RecipeService::class.java)
+            .create(RecipeAPI::class.java)
     }
 }

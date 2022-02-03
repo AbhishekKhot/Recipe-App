@@ -33,8 +33,6 @@ class SearchFragment : Fragment(),RecipeEventDispatcher {
 
    private val viewModel: SearchViewModel by viewModels()
     private lateinit var pagingAdapter:RecipePagingAdapter
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private var _binding: FragmentSearchBinding? = null
     private val binding get() = _binding!!
 

@@ -30,8 +30,6 @@ class FavoritesFragment : Fragment(), FavoriteRecipeEventDispatcher {
     private lateinit var adapter:FavoritesAdapter
     private lateinit var onBackPressedCallback: OnBackPressedCallback
     private var _binding: FragmentFavoritesBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     companion object {

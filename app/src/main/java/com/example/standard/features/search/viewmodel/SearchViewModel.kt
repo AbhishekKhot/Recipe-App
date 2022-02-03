@@ -6,8 +6,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.example.standard.core.constants.K
-import com.example.standard.core.data.network.services.RecipeService
+import com.example.standard.core.constants.AppConstants.RECIPES_PER_PAGE
+import com.example.standard.core.data.network.services.RecipeAPI
 import com.example.standard.core.domain.model.Recipe
 import com.example.standard.features.search.repository.SearchPagingSource
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -16,7 +16,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SearchViewModel @Inject constructor(
-    private val service: RecipeService
+    private val API: RecipeAPI
 ) : ViewModel() {
 
     val recipesFlow: Flow<PagingData<Recipe>>
@@ -24,13 +24,13 @@ class SearchViewModel @Inject constructor(
 
     init {
         recipesFlow = Pager(
-            config = PagingConfig(K.RECIPES_PER_PAGE),
+            config = PagingConfig(RECIPES_PER_PAGE),
             pagingSourceFactory = ::createPagingSource
         ).flow
             .cachedIn(viewModelScope)
     }
 
     private fun createPagingSource(): SearchPagingSource {
-        return SearchPagingSource(service, query)
+        return SearchPagingSource(API, query)
     }
 }

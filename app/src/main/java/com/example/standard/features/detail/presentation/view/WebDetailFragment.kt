@@ -15,10 +15,8 @@ import com.example.standard.core.utils.configureStatusBar
 import com.example.standard.databinding.FragmentWebDetailBinding
 
 class WebDetailFragment : Fragment(), WebViewDelegate {
-    private val args:WebDetailFragmentArgs by navArgs()
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private val args:WebDetailFragmentArgs by navArgs()
     private var _binding: FragmentWebDetailBinding? = null
     private val binding get() = _binding!!
 

@@ -2,8 +2,8 @@ package com.example.standard.di
 
 import android.content.Context
 import com.example.standard.core.data.database.AppDatabase
-import com.example.standard.core.data.network.client.RecipesApiClient
-import com.example.standard.core.data.network.services.RecipeService
+import com.example.standard.core.data.network.client.RetrofitApiClient
+import com.example.standard.core.data.network.services.RecipeAPI
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,7 +17,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRecipeService():RecipeService = RecipesApiClient.createRecipeService()
+    fun provideRecipeService():RecipeAPI = RetrofitApiClient.createRecipeService()
 
     @Provides
     @Singleton

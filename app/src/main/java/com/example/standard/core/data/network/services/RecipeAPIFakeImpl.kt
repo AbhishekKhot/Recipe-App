@@ -3,7 +3,7 @@ package com.example.standard.core.data.network.services
 import com.example.standard.core.data.network.model.*
 import kotlinx.coroutines.delay
 
-class RecipeServiceFakeImpl: RecipeService {
+class RecipeAPIFakeImpl: RecipeAPI {
     override suspend fun searchRecipes(
         query: String,
         addRecipeInformation: Boolean,

@@ -44,8 +44,6 @@ class RecipeDetailFragment : Fragment() {
         private const val TAG = "RecipeDetailFragment"
     }
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private var _binding: FragmentRecipeDetailBinding? = null
     private val binding get() = _binding!!
 

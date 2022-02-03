@@ -23,8 +23,6 @@ class CategoriesFragment : Fragment(), CategoryEventDispatcher {
 
     private val viewModel:CategoriesViewModel by viewModels()
     private lateinit var adapter: CategoriesAdapter
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private var _binding: FragmentCategoriesBinding? = null
     private val binding get() = _binding!!
 

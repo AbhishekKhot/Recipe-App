@@ -39,7 +39,7 @@
     <string name="delivery">FAST DELIVERY</string>
     <string name="payment">EASY PAYMENT</string>
 
-    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</string>
+    <string name="lorem">Recipe App onBoarding screen learn cooking recipes and make delicious food items</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

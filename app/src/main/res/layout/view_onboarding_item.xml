@@ -15,7 +15,7 @@
         android:layout_marginBottom="4dp"
         android:layout_weight="60"
         tools:ignore="ContentDescription"
-        tools:src="@drawable/onboarding_img_1" />
+        tools:src="@drawable/second_screen" />
 
     <TextView
         android:id="@+id/obTitle"

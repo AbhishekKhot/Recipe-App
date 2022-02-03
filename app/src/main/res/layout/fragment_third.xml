@@ -8,11 +8,12 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/ic_delivery"
+        android:layout_width="340dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/third_screen"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

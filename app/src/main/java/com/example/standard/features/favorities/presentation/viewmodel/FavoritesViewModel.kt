@@ -1,6 +1,5 @@
 package com.example.standard.features.favorities.presentation.viewmodel
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.example.standard.core.domain.repository.RecipeRepository
 import com.example.standard.features.favorities.domain.FavoriteRecipe

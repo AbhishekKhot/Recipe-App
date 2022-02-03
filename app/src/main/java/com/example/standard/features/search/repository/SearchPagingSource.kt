@@ -2,23 +2,23 @@ package com.example.standard.features.search.repository
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.standard.core.constants.K
+import com.example.standard.core.constants.AppConstants.RECIPES_PER_PAGE
 import com.example.standard.core.data.network.model.asDomainModel
-import com.example.standard.core.data.network.services.RecipeService
+import com.example.standard.core.data.network.services.RecipeAPI
 import com.example.standard.core.domain.model.Recipe
 import com.example.standard.core.error.HttpLimitExceededException
 import retrofit2.HttpException
 
 class SearchPagingSource (
-    private val service: RecipeService,
+    private val API: RecipeAPI,
     private val query: String
 ) : PagingSource<Int, Recipe>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Recipe> {
         try {
             val pageNumber = params.key ?: 1
-            val pageSize = K.RECIPES_PER_PAGE
+            val pageSize = RECIPES_PER_PAGE
             val offset = (pageNumber - 1) * pageSize
-            val response = service.searchRecipes(
+            val response = API.searchRecipes(
                 query = query,
                 addRecipeInformation = true,
                 number = pageSize,

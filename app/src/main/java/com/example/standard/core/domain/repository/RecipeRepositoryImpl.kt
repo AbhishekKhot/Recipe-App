@@ -6,7 +6,7 @@ import com.example.standard.core.data.database.entities.DatabaseInstruction
 import com.example.standard.core.data.database.entities.DatabaseRecipe
 import com.example.standard.core.data.database.entities.asDomainModel
 import com.example.standard.core.data.network.model.asDomainModel
-import com.example.standard.core.data.network.services.RecipeService
+import com.example.standard.core.data.network.services.RecipeAPI
 import com.example.standard.core.domain.model.Recipe
 import com.example.standard.core.domain.model.toDatabaseModel
 import com.example.standard.core.error.Failure
@@ -19,7 +19,7 @@ import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 class RecipeRepositoryImpl @Inject constructor(
-    private val service: RecipeService,
+    private val API: RecipeAPI,
     private val recipeDao: RecipeDao
 ) : RecipeRepository {
     override suspend fun searchRecipes(
@@ -29,7 +29,7 @@ class RecipeRepositoryImpl @Inject constructor(
         offset: Int
     ): Either<Failure, List<Recipe>> {
         return try {
-            val result = service.searchRecipes(query, addRecipeInformation, number, offset)
+            val result = API.searchRecipes(query, addRecipeInformation, number, offset)
             val recipes = result.results.map { it.asDomainModel() }
             right(recipes)
         } catch (e: Exception) {
@@ -44,7 +44,7 @@ class RecipeRepositoryImpl @Inject constructor(
         options: Map<String, String>
     ): Either<Failure, List<Recipe>> {
         return try {
-            val result = service.searchRecipes(addRecipeInformation, number, offset, options)
+            val result = API.searchRecipes(addRecipeInformation, number, offset, options)
             val recipes = result.results.map { it.asDomainModel() }
             right(recipes)
         } catch (e: Exception) {
@@ -56,7 +56,7 @@ class RecipeRepositoryImpl @Inject constructor(
         id: Int
     ): Either<Failure, Recipe> {
         return try {
-            val response = service.requestRecipeInformation(id)
+            val response = API.requestRecipeInformation(id)
             right(response.asDomainModel())
         } catch (e: Throwable) {
             left(e.toFailure())

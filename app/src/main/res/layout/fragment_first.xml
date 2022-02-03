@@ -7,17 +7,18 @@ android:layout_height="match_parent"
 tools:context=".ui.onboarding.screens.FirstFragment">
 
 
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
-    android:layout_marginTop="150dp"
-    android:src="@drawable/ic_food"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="340dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/first_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<TextView
+    <TextView
     android:id="@+id/title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

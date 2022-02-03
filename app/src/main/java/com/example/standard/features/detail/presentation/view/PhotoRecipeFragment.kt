@@ -17,11 +17,9 @@ import kotlinx.android.synthetic.main.fragment_web_detail.btnBack
 
 
 class PhotoRecipeFragment : Fragment() {
-    private val args:PhotoRecipeFragmentArgs by navArgs()
 
+    private val args:PhotoRecipeFragmentArgs by navArgs()
     private var _binding: FragmentPhotoRecipeBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     companion object {

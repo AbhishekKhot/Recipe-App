@@ -6,8 +6,8 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.example.standard.core.constants.K
-import com.example.standard.core.data.network.services.RecipeService
+import com.example.standard.core.constants.AppConstants.RECIPES_PER_PAGE
+import com.example.standard.core.data.network.services.RecipeAPI
 import com.example.standard.core.domain.model.Recipe
 import com.example.standard.features.categories.domain.model.CategoryItem
 import com.example.standard.features.categories.domain.repository.FilteredRecipesPagingSource
@@ -17,15 +17,15 @@ import javax.inject.Inject
 
 @HiltViewModel
 class CategoryDetailViewModel @Inject constructor(
-    private val service: RecipeService
+    private val API: RecipeAPI
 ) :ViewModel() {
 
     var recipesFlow: Flow<PagingData<Recipe>>? = null
 
     fun requestRecipesForCategory(categoryItem: CategoryItem) {
-        recipesFlow = Pager(PagingConfig(K.RECIPES_PER_PAGE)) {
+        recipesFlow = Pager(PagingConfig(RECIPES_PER_PAGE)) {
             val options = mapOf(categoryItem.type to categoryItem.name)
-            FilteredRecipesPagingSource(service, options)
+            FilteredRecipesPagingSource(API, options)
         }.flow
             .cachedIn(viewModelScope)
     }
