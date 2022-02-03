@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackground"
     android:fitsSystemWindows="true"
-    tools:context=".ui.detail.WebDetailFragment">
+    tools:context=".features.detail.presentation.view.WebDetailFragment">
 
     <LinearLayout
         android:id="@+id/appBar"

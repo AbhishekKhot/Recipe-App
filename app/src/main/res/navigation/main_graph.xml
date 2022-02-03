@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.example.standard.ui.categories.CategoriesFragment"
+        android:name="com.example.standard.features.categories.presentation.view.CategoriesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
         <action
@@ -36,17 +36,17 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.standard.ui.search.SearchFragment"
+        android:name="com.example.standard.features.search.view.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.example.standard.ui.favorities.FavoritesFragment"
+        android:name="com.example.standard.features.favorities.presentation.view.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
     <fragment
         android:id="@+id/categoryDetailFragment"
-        android:name="com.example.standard.ui.categories.CategoryDetailFragment"
+        android:name="com.example.standard.features.categories.presentation.view.CategoryDetailFragment"
         android:label="fragment_category_detail"
         tools:layout="@layout/fragment_category_detail" >
         <argument
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/webDetailFragment"
-        android:name="com.example.standard.ui.detail.WebDetailFragment"
+        android:name="com.example.standard.features.detail.presentation.view.WebDetailFragment"
         android:label="fragment_web_detail"
         tools:layout="@layout/fragment_web_detail" >
         <argument
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/photoRecipeFragment"
-        android:name="com.example.standard.ui.detail.PhotoRecipeFragment"
+        android:name="com.example.standard.features.detail.presentation.view.PhotoRecipeFragment"
         android:label="fragment_photo_recipe"
         tools:layout="@layout/fragment_photo_recipe" >
         <argument
@@ -76,7 +76,7 @@
     </fragment>
     <fragment
         android:id="@+id/recipeDetailFragment"
-        android:name="com.example.standard.ui.detail.RecipeDetailFragment"
+        android:name="com.example.standard.features.detail.presentation.view.RecipeDetailFragment"
         android:label="fragment_recipe_detail"
         tools:layout="@layout/fragment_recipe_detail" >
         <action

@@ -1,4 +1,4 @@
-package com.example.standard.ui.categories
+package com.example.standard.features.categories.presentation.view
 
 import android.annotation.SuppressLint
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.standard.ui.detail
+package com.example.standard.features.detail.presentation.view
 
 import android.annotation.SuppressLint
 import android.content.Intent

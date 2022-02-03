@@ -1,4 +1,4 @@
-package com.example.standard.ui.search
+package com.example.standard.features.search.view
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -16,14 +16,12 @@ import androidx.lifecycle.lifecycleScope
 import androidx.paging.CombinedLoadStates
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.standard.R
 import com.example.standard.core.domain.model.Recipe
 import com.example.standard.core.error.toFailure
 import com.example.standard.core.presentation.adapters.PagingLoadStateAdapter
 import com.example.standard.core.presentation.adapters.RecipePagingAdapter
 import com.example.standard.core.presentation.dispatchers.RecipeEventDispatcher
 import com.example.standard.core.utils.navigateToRecipeDetail
-import com.example.standard.databinding.FragmentFavoritesBinding
 import com.example.standard.databinding.FragmentSearchBinding
 import com.example.standard.features.search.viewmodel.SearchViewModel
 import dagger.hilt.android.AndroidEntryPoint

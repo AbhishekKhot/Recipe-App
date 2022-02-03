@@ -1,4 +1,4 @@
-package com.example.standard.ui.detail
+package com.example.standard.features.detail.presentation.view
 
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -22,7 +22,7 @@ class WebDetailFragment : Fragment(), WebViewDelegate {
     private var _binding: FragmentWebDetailBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var client:RecipeWebViewClient
+    private lateinit var client: RecipeWebViewClient
 
     override fun onCreateView(
         inflater: LayoutInflater,

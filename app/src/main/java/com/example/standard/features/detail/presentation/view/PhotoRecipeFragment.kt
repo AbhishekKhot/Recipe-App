@@ -1,7 +1,6 @@
-package com.example.standard.ui.detail
+package com.example.standard.features.detail.presentation.view
 
 import android.os.Bundle
-import android.text.util.Linkify
 import android.transition.TransitionInflater
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,14 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.standard.R
 import com.example.standard.core.utils.applyTopWindowInsets
 import com.example.standard.core.utils.bindNetworkImage
 import com.example.standard.core.utils.configureStatusBar
-import com.example.standard.databinding.FragmentCategoriesBinding
 import com.example.standard.databinding.FragmentPhotoRecipeBinding
 import kotlinx.android.synthetic.main.fragment_photo_recipe.*
-import kotlinx.android.synthetic.main.fragment_web_detail.*
 import kotlinx.android.synthetic.main.fragment_web_detail.btnBack
 
 
