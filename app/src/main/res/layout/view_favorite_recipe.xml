@@ -44,7 +44,7 @@
         android:src="@drawable/ic_heart_fill"
         app:layout_constraintEnd_toEndOf="@id/cardView"
         app:layout_constraintTop_toTopOf="@id/cardView"
-        app:tint="@color/colorAccent"
+        app:tint="#FF0057"
         tools:ignore="ContentDescription" />
 
     <TextView

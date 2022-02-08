@@ -57,7 +57,7 @@
         android:src="@drawable/ic_people"
         app:layout_constraintBottom_toBottomOf="@+id/ivRecipe"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/colorAccent"
+        app:tint="#00B0FF"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -83,7 +83,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvPeople"
         app:layout_constraintStart_toEndOf="@+id/tvPeople"
         app:layout_constraintTop_toTopOf="@+id/tvPeople"
-        app:tint="@color/colorAccent"
+        app:tint="#00B0FF"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -108,7 +108,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvScore"
         app:layout_constraintStart_toEndOf="@+id/tvScore"
         app:layout_constraintTop_toTopOf="@+id/tvScore"
-        app:tint="@color/colorAccent"
+        app:tint="#00B0FF"
         tools:ignore="ContentDescription" />
 
     <TextView

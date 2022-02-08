@@ -3,17 +3,78 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable-v24/bottom_nav_selector.xml" value="0.19583333333333333" />
         <entry key="..\:/Projects/Standard/app/src/main/res/drawable-v24/ic_delivery.xml" value="0.1814814814814815" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable-v24/ic_food.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable-v24/ic_payment.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable-v24/ic_splash_screen.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/back_btn_bg.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/category_background_gradient.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/checkbox_check_background.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/checkbox_selector.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/checkbox_uncheck_background.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/heart_background.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_arrow_left.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_back.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_cancel.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_check.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_chef_outline.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_chef_white.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_close.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_cooking.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_favorites.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_favorites_outline.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_heart.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_heart_fill.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_heart_outline.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_left_arrow.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_people.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_search_outline.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_share.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_star.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_time.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_trash.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ic_web.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/icon_button_ripple.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/icon_button_ripple_light.xml" value="0.18020833333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/launch_theme_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/recipe_element_dot.xml" value="0.19583333333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/recipe_image_overlay.xml" value="0.19583333333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/ripple_recipe.xml" value="0.19583333333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/rounded_accent_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/drawable/search_bar_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/activity_on_boarding.xml" value="0.1640625" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_categories.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_category_detail.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_favorites.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_first.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_photo_recipe.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_recipe_detail.xml" value="0.1" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_search.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_second.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_splash.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_third.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_view_pager.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/fragment_web_detail.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/list_view_home_category.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/search_bar.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/text_view_header.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_direction.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_empty.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_error.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_favorite_recipe.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_home_category.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_ingredient.xml" value="0.1796875" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_onboarding_item.xml" value="0.1796875" />
-        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_recipe.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_recipe.xml" value="1.3333333333333333" />
         <entry key="..\:/Projects/Standard/app/src/main/res/layout/view_spin_indicator.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Standard/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
         <entry key="..\:/Standard/app/src/main/res/layout-v23/fragment_category_detail.xml" value="0.1796875" />
         <entry key="..\:/Standard/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Standard/app/src/main/res/layout/fragment_categories.xml" value="0.1796875" />

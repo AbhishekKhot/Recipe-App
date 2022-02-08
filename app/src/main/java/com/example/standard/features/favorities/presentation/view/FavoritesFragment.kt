@@ -70,7 +70,7 @@ class FavoritesFragment : Fragment(), FavoriteRecipeEventDispatcher {
         viewModel.recipes.observe(viewLifecycleOwner, Observer{ recipes ->
             if(recipes.isEmpty()){
                 binding.rvFavorites.visibility = View.INVISIBLE
-                binding.emptyLayout.emptyImageView.setImageResource(R.drawable.ic_favorites)
+                binding.emptyLayout.emptyImageView.setImageResource(R.drawable.not_available)
                 binding.emptyLayout.emptyTextView.text = getString(R.string.no_favorites)
                 binding.emptyLayout.emptyView.visibility = View.VISIBLE
             }

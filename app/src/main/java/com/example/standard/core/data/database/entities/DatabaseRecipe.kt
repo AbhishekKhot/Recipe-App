@@ -38,7 +38,6 @@ data class DatabaseRecipeInformation(
     val ingredients: List<DatabaseIngredient>
 )
 
-// Extensions
 
 fun DatabaseRecipeInformation.asDomainModel(): Recipe {
     return Recipe(

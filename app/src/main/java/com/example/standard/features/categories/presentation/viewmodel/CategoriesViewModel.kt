@@ -17,7 +17,7 @@ class CategoriesViewModel: ViewModel() {
 
     init {
         viewModelScope.launch {
-            delay(320)
+            delay(100)
             _categories.value = categoriesList.toList()
         }
     }

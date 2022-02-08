@@ -78,7 +78,7 @@
             app:layout_constraintEnd_toStartOf="@+id/textTime"
             app:layout_constraintTop_toTopOf="@+id/textTime"
             app:srcCompat="@drawable/ic_time"
-            app:tint="@color/colorAccent"
+            app:tint="#00B0FF"
             tools:ignore="ContentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

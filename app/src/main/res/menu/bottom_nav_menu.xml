@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/categoriesFragment"
-        android:icon="@drawable/ic_chef_outline"
+        android:icon="@drawable/home"
         android:title="" />
 
     <item
         android:id="@+id/searchFragment"
-        android:icon="@drawable/ic_search_outline"
+        android:icon="@drawable/search"
         android:title="" />
 
     <item
         android:id="@+id/favoritesFragment"
-        android:icon="@drawable/ic_favorites_outline"
+        android:icon="@drawable/favorite"
         android:title="" />
 
 </menu>

@@ -6,18 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".features.search.view.SearchFragment">
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvTitle"-->
-<!--        style="@style/HeadlineTextStyle"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginBottom="24dp"-->
-<!--        android:text="@string/recipes_title"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <include
         android:id="@+id/includeSearchBar"
         layout="@layout/search_bar"

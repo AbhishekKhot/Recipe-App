@@ -49,8 +49,6 @@ data class NetworkIngredient(
     val unit: String
 )
 
-// Extensions
-
 fun NetworkRecipe.asDomainModel(): Recipe {
     var instructions = listOf<Instruction>()
     var ingredients = listOf<Ingredient>()

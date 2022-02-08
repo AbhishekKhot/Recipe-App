@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="8sp"
+        android:textColor="#00B0FF"
         android:fontFamily="@font/sf_pro_text_medium"
         android:text="@string/retry"
         android:textSize="16sp" />
