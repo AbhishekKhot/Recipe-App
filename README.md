@@ -4,7 +4,11 @@ this app usese a remote API to fetch recipe data and it is shown in the app user
 and kotlin coroutines and paging to load the large data from the remote API
 
 
-https://user-images.githubusercontent.com/90719979/153739153-478b4361-d30a-4b70-81bf-a5773983b2fc.mp4
+
+https://user-images.githubusercontent.com/90719979/153739185-97cd76bf-0ad1-4a96-b42e-aa8b67b6ad35.mp4
+
+
+
 
 
 
