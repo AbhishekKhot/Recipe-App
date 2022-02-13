@@ -36,8 +36,8 @@
     <string name="delete">Delete</string>
     <string name="delete_favorites_message">Are you sure you want to delete (%1$d) recipes from your favorites list?</string>
     <string name="food">FRESH FOOD</string>
-    <string name="delivery">FAST DELIVERY</string>
-    <string name="payment">EASY PAYMENT</string>
+    <string name="delivery">FAST FOOD TOO</string>
+    <string name="payment">HEALTHY FOOD ALSO</string>
 
     <string name="lorem">Recipe App onBoarding screen learn cooking recipes and make delicious food items</string>
     <!-- TODO: Remove or change this placeholder text -->
