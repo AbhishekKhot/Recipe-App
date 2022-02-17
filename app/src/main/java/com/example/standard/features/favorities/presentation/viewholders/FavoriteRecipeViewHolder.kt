@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.standard.core.utils.bindNetworkImage
+import com.example.standard.core.utils.loadImage
 import com.example.standard.databinding.ViewFavoriteRecipeBinding
 import com.example.standard.features.favorities.domain.FavoriteRecipe
 import com.example.standard.features.favorities.presentation.dispatchers.FavoriteRecipeEventDispatcher
@@ -28,7 +28,7 @@ class FavoriteRecipeViewHolder(
     fun bind(recipe: FavoriteRecipe, isSelecting: Boolean) {
         binding.cardView.transitionName = recipe.id.toString()
         binding.tvName.text = recipe.data.title
-        bindNetworkImage(binding.ivRecipe, recipe.data.imageUrl)
+        loadImage(binding.ivRecipe, recipe.data.imageUrl)
 
         binding.checkbox.isVisible = isSelecting
         binding.selectingOverlay.isVisible = isSelecting

@@ -1,7 +1,7 @@
 package com.example.standard.core.domain.model
 
-import com.example.standard.core.data.database.entities.DatabaseIngredient
-import com.example.standard.core.data.database.entities.DatabaseInstruction
+import com.example.standard.core.data.database.entities.RecipeIngredient
+import com.example.standard.core.data.database.entities.RecipeInstructions
 import com.example.standard.core.data.database.entities.DatabaseRecipe
 import com.example.standard.core.data.database.entities.DatabaseRecipeInformation
 
@@ -47,7 +47,7 @@ fun Recipe.toDatabaseModel(): DatabaseRecipeInformation {
     )
 
     val dbIngredients = ingredients?.map { ingredient ->
-        DatabaseIngredient(
+        RecipeIngredient(
             id = ingredient.id,
             recipeId = id,
             name = ingredient.name,
@@ -58,7 +58,7 @@ fun Recipe.toDatabaseModel(): DatabaseRecipeInformation {
     }
 
     val dbInstructions = instructions?.map { instruction ->
-        DatabaseInstruction(
+        RecipeInstructions(
             recipeId = id,
             number = instruction.number,
             step = instruction.step

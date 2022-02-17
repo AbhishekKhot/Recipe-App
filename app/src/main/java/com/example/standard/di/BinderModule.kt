@@ -1,7 +1,7 @@
 package com.example.standard.di
 
 import com.example.standard.core.domain.repository.RecipeRepository
-import com.example.standard.core.domain.repository.RecipeRepositoryImpl
+import com.example.standard.core.domain.repository.RecipeRepositoryImplementation
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -12,6 +12,6 @@ import dagger.hilt.components.SingletonComponent
 abstract class BinderModule {
     @Binds
     abstract fun bindRecipeRepository(
-        recipeRepositoryImpl: RecipeRepositoryImpl
+        recipeRepositoryImpl: RecipeRepositoryImplementation
     ):RecipeRepository
 }

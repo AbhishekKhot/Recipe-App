@@ -9,6 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitApiClient {
+
     private fun getHttpClient(): OkHttpClient {
         val requestInterceptor = Interceptor { chain ->
             val url = chain.request()

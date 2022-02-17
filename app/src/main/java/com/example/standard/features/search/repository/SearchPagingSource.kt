@@ -45,6 +45,8 @@ class SearchPagingSource (
     }
 
     override fun getRefreshKey(state: PagingState<Int, Recipe>): Int? {
-        TODO("Not yet implemented")
+        return state.anchorPosition?.let {
+            state.closestItemToPosition(it)?.id
+        }
     }
 }

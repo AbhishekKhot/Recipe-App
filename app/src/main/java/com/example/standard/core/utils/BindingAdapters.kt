@@ -9,7 +9,7 @@ import com.example.standard.R
 
 
 @BindingAdapter("imageUrl")
-fun bindNetworkImage(imgView: ImageView, imageUrl: String?) {
+fun loadImage(imgView: ImageView, imageUrl: String?) {
     imageUrl?.let {
         val imgUri = it.toUri().buildUpon().scheme("https").build()
         Glide.with(imgView.context)

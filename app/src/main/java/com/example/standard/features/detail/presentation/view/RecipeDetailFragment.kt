@@ -21,7 +21,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.standard.R
-import com.example.standard.core.utils.bindNetworkImage
+import com.example.standard.core.utils.loadImage
 import com.example.standard.core.utils.configureStatusBar
 import com.example.standard.databinding.FragmentRecipeDetailBinding
 import com.example.standard.features.detail.presentation.adapters.RecipeDetailAdapter
@@ -118,7 +118,7 @@ class RecipeDetailFragment : Fragment() {
     private fun buildHeader() {
         if (args.id == null) {
             viewModel.state.value?.recipe?.let { recipe ->
-                bindNetworkImage(ivRecipe, recipe.imageUrl)
+                loadImage(ivRecipe, recipe.imageUrl)
                 tvName.text = recipe.title
                 tvPeople.text = recipe.servings?.toString()
                 tvTime.text = getString(R.string.minutes_label, recipe.readyInMinutes)
@@ -135,7 +135,7 @@ class RecipeDetailFragment : Fragment() {
         } else {
             viewModel.state.observe(viewLifecycleOwner, Observer {state ->
                 state.recipe?.let {recipe ->
-                    bindNetworkImage(ivRecipe, recipe.imageUrl)
+                    loadImage(ivRecipe, recipe.imageUrl)
                     tvName.text = recipe.title
                     tvPeople.text = recipe.servings?.toString()
                     tvTime.text = getString(R.string.minutes_label, recipe.readyInMinutes)

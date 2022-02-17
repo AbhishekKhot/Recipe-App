@@ -1,8 +1,8 @@
 package com.example.standard.core.data.database.dao
 
 import androidx.room.*
-import com.example.standard.core.data.database.entities.DatabaseIngredient
-import com.example.standard.core.data.database.entities.DatabaseInstruction
+import com.example.standard.core.data.database.entities.RecipeIngredient
+import com.example.standard.core.data.database.entities.RecipeInstructions
 import com.example.standard.core.data.database.entities.DatabaseRecipe
 import com.example.standard.core.data.database.entities.DatabaseRecipeInformation
 import kotlinx.coroutines.flow.Flow
@@ -21,21 +21,21 @@ interface RecipeDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertRecipe(
         recipe: DatabaseRecipe,
-        ingredients: List<DatabaseIngredient>,
-        instructions: List<DatabaseInstruction>
+        ingredients: List<RecipeIngredient>,
+        instructions: List<RecipeInstructions>
     )
 
     @Delete
     suspend fun deleteRecipe(
         recipe: DatabaseRecipe,
-        ingredients: List<DatabaseIngredient>,
-        instructions: List<DatabaseInstruction>
+        ingredients: List<RecipeIngredient>,
+        instructions: List<RecipeInstructions>
     )
 
     @Delete
     suspend fun deleteMultipleRecipes(
         recipes: List<DatabaseRecipe>,
-        ingredients: List<DatabaseIngredient>,
-        instructions: List<DatabaseInstruction>
+        ingredients: List<RecipeIngredient>,
+        instructions: List<RecipeInstructions>
     )
 }

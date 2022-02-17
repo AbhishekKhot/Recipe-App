@@ -1,8 +1,8 @@
 package com.example.standard.core.domain.repository
 
 import com.example.standard.core.data.database.dao.RecipeDao
-import com.example.standard.core.data.database.entities.DatabaseIngredient
-import com.example.standard.core.data.database.entities.DatabaseInstruction
+import com.example.standard.core.data.database.entities.RecipeIngredient
+import com.example.standard.core.data.database.entities.RecipeInstructions
 import com.example.standard.core.data.database.entities.DatabaseRecipe
 import com.example.standard.core.data.database.entities.asDomainModel
 import com.example.standard.core.data.network.model.asDomainModel
@@ -18,10 +18,11 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
-class RecipeRepositoryImpl @Inject constructor(
+class RecipeRepositoryImplementation @Inject constructor(
     private val API: RecipeAPI,
     private val recipeDao: RecipeDao
 ) : RecipeRepository {
+
     override suspend fun searchRecipes(
         query: String,
         addRecipeInformation: Boolean,
@@ -93,8 +94,8 @@ class RecipeRepositoryImpl @Inject constructor(
 
     override suspend fun deleteMultipleFavorites(recipes: List<Recipe>) {
         val dbRecipes = mutableListOf<DatabaseRecipe>()
-        val dbIngredients = mutableListOf<DatabaseIngredient>()
-        val dbInstructions = mutableListOf<DatabaseInstruction>()
+        val dbIngredients = mutableListOf<RecipeIngredient>()
+        val dbInstructions = mutableListOf<RecipeInstructions>()
 
         for (recipe in recipes) {
             val model = recipe.toDatabaseModel()

@@ -4,13 +4,13 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "instructions")
-data class DatabaseInstruction(
+@Entity(tableName = "ingredients")
+data class RecipeIngredient(
+    @PrimaryKey val id: Int,
     @ColumnInfo(name = "recipe_id")
     val recipeId: Int,
-    val number: Int,
-    val step: String
-){
-    @PrimaryKey
-    var id: String = "$recipeId-$number"
-}
+    val name: String,
+    val original: String,
+    val amount: Float,
+    val unit: String
+)

@@ -20,7 +20,7 @@ import com.example.standard.core.presentation.adapters.PagingLoadStateAdapter
 import com.example.standard.core.presentation.adapters.RecipePagingAdapter
 import com.example.standard.core.presentation.dispatchers.RecipeEventDispatcher
 import com.example.standard.core.utils.applyTopWindowInsets
-import com.example.standard.core.utils.bindNetworkImage
+import com.example.standard.core.utils.loadImage
 import com.example.standard.core.utils.configureStatusBar
 import com.example.standard.core.utils.navigateToRecipeDetail
 import com.example.standard.databinding.FragmentCategoryDetailBinding
@@ -66,7 +66,7 @@ class CategoryDetailFragment : Fragment(), RecipeEventDispatcher{
         binding.rvRecipes.adapter = adapter.withLoadStateFooter(PagingLoadStateAdapter())
 
         binding.tvTitle.text = args.category.name
-        bindNetworkImage(binding.ivCategoryItem,args.category.imageUrl)
+        loadImage(binding.ivCategoryItem,args.category.imageUrl)
 
         binding.btnBack.setOnClickListener {
             findNavController().navigateUp()

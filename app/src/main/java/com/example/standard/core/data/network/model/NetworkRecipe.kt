@@ -23,7 +23,6 @@ data class NetworkRecipe(
     val ingredients: List<NetworkIngredient>?
 )
 
-
 data class NetworkInstructions(
     val steps: List<NetworkStep>
 )

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.standard.core.utils.applyTopWindowInsets
-import com.example.standard.core.utils.bindNetworkImage
+import com.example.standard.core.utils.loadImage
 import com.example.standard.core.utils.configureStatusBar
 import com.example.standard.databinding.FragmentPhotoRecipeBinding
 import kotlinx.android.synthetic.main.fragment_photo_recipe.*
@@ -45,7 +45,7 @@ class PhotoRecipeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bindNetworkImage(ivRecipe,args.imageUrl)
+        loadImage(ivRecipe,args.imageUrl)
         btnBack.applyTopWindowInsets()
         btnBack.setOnClickListener {
             findNavController().navigateUp()

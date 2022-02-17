@@ -14,7 +14,6 @@ interface RecipeRepository {
         offset: Int
     ): Either<Failure, List<Recipe>>
 
-
     suspend fun searchRecipes(
         addRecipeInformation: Boolean,
         number: Int,
@@ -22,21 +21,15 @@ interface RecipeRepository {
         options: Map<String, String>
     ): Either<Failure, List<Recipe>>
 
-
     suspend fun requestRecipeInformation(id: Int): Either<Failure, Recipe>
-
 
     fun requestFavoriteRecipes(): Flow<List<Recipe>>
 
-
     suspend fun saveFavoriteRecipe(recipe: Recipe)
-
 
     fun requestFavoriteRecipeById(id: Int): Flow<Recipe?>
 
-
     suspend fun deleteFavoriteRecipe(recipe: Recipe)
-
 
     suspend fun deleteMultipleFavorites(recipes: List<Recipe>)
 }

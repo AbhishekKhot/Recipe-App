@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.standard.R
 import com.example.standard.core.domain.model.Recipe
 import com.example.standard.core.presentation.dispatchers.RecipeEventDispatcher
-import com.example.standard.core.utils.bindNetworkImage
+import com.example.standard.core.utils.loadImage
 import com.example.standard.databinding.ViewRecipeBinding
 
 class RecipeViewHolder(
@@ -35,7 +35,7 @@ class RecipeViewHolder(
             R.string.minutes_label,
             recipe.readyInMinutes ?: 0
         )
-        bindNetworkImage(binding.ivRecipe, recipe.imageUrl)
+        loadImage(binding.ivRecipe, recipe.imageUrl)
         binding.cardRecipe.setOnClickListener {
             eventDispatcher.onRecipePressed(recipe, binding.recipeContainer)
         }

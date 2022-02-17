@@ -17,8 +17,6 @@ import java.lang.ClassCastException
 
 class RecipeDetailAdapter: ListAdapter<RecipeDetailItem, RecyclerView.ViewHolder>(RecipeDetailItemDiffCallback()) {
 
-    private val adapterScope = CoroutineScope(Dispatchers.Default)
-
     companion object {
         private const val TAG = "RecipeDetailAdapter"
         private const val ITEM_VIEW_TYPE_SUMMARY = 0

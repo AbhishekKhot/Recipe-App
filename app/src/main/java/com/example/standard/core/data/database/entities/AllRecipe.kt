@@ -30,12 +30,12 @@ data class DatabaseRecipeInformation(
         parentColumn = "id",
         entityColumn = "recipe_id"
     )
-    val instructions: List<DatabaseInstruction>,
+    val instructions: List<RecipeInstructions>,
     @Relation(
         parentColumn = "id",
         entityColumn = "recipe_id"
     )
-    val ingredients: List<DatabaseIngredient>
+    val ingredients: List<RecipeIngredient>
 )
 
 
@@ -55,6 +55,6 @@ fun DatabaseRecipeInformation.asDomainModel(): Recipe {
     )
 }
 
-fun DatabaseIngredient.asDomainModel() = Ingredient(id, name, original, amount, unit)
+fun RecipeIngredient.asDomainModel() = Ingredient(id, name, original, amount, unit)
 
-fun DatabaseInstruction.asDomainModel() = Instruction(number, step)
+fun RecipeInstructions.asDomainModel() = Instruction(number, step)
