@@ -1,33 +1,51 @@
 # Recipe-App
-This is the Recipe App in Android using kotlin
-this app usese a remote API to fetch recipe data and it is shown in the app user can save their favorite recipes in the room database this app follows MVVM architecture pattern 
-and kotlin coroutines and paging to load the large data from the remote API
+This is the Recipe App in Android 
+Usese a remote API to fetch recipe data and it is shown in app & recipe's can also be saved in room database implemented in the app 
 
-![image1](https://user-images.githubusercontent.com/90719979/153734674-5b54ae57-9766-4108-896d-956df674f146.jpeg)
+App Features:
 
-![image2](https://user-images.githubusercontent.com/90719979/153734678-c24a4c3e-dd44-4117-95f9-7116b9784b08.jpeg)
+1) Different categories of recipes are shown in home screen
+2) User can see particuler type of recipes ordered by categories
+3) Also user is able to search recipe's
+4) User can save the favorite recipes to the database 
 
-![image3](https://user-images.githubusercontent.com/90719979/153734682-787590b2-bcd3-4c7b-afeb-51f79f9ad76b.jpeg)
+..............................................................................................................................................................................
 
-![image4](https://user-images.githubusercontent.com/90719979/153734687-e3da4fc3-853a-4b68-87ba-91ad27098981.jpeg)
+Used Tech:
 
-![image5](https://user-images.githubusercontent.com/90719979/153734690-89873602-b178-4d1c-9e09-f4e370d1ffdb.jpeg)
+1) Navigation component 
+2) Retrofit
+3) Room Database
+4) Motion Layouts
+5) Navigation safeArgs
+6) Dagger-Hilt
+7) Preference Datastore
+8) Paging library 
+9) Kotlin coroutines
+10) Kotlin flows
+11) LiveData
+12) ViewPager2
+13) WebView
 
-![image6](https://user-images.githubusercontent.com/90719979/153734691-07893514-ff60-42d9-a693-2b1b1e51f742.jpeg)
 
-![image7](https://user-images.githubusercontent.com/90719979/153734693-cd063bcc-8b27-4901-99ba-188b8e81fd43.jpeg)
 
-![image8](https://user-images.githubusercontent.com/90719979/153734725-b6d230f7-8e15-4790-877b-e79415722111.jpeg)
+Splash Screen and OnBoarding Screens
 
-![image9](https://user-images.githubusercontent.com/90719979/153734729-65cf43a4-b7c6-47bc-872e-bf91ab01677e.jpeg)
+![FirstPerviewImage](https://user-images.githubusercontent.com/90719979/153740086-7faca5b2-e231-4fe4-8a29-1960bf7b21b2.jpg)
 
-![image10](https://user-images.githubusercontent.com/90719979/153734733-a13f360c-1cd5-494b-b886-d88eefef3dba.jpeg)
+................................................................................................................................................................................
 
-![image11](https://user-images.githubusercontent.com/90719979/153734739-2212aefa-5255-48a6-b1b2-a6c73a9418c2.jpeg)
+All Categories and details Screens
 
-![image12](https://user-images.githubusercontent.com/90719979/153734741-a6faf0ce-8529-4b71-a9e2-f64836cf0dcd.jpeg)
+![SecondPreviewImage](https://user-images.githubusercontent.com/90719979/153740095-fb7197c7-cc23-435e-9bd2-ec3505861aab.jpg)
 
-![image13](https://user-images.githubusercontent.com/90719979/153734746-db6f953c-01f9-4f27-a7fa-2886476be8ed.jpeg)
+................................................................................................................................................................................
 
-![image14](https://user-images.githubusercontent.com/90719979/153734751-893abbea-f2bb-4df6-9fb8-d027124526dc.jpeg)
+Saved Recipes Screens and Search Recipe Screens
+
+![ThirdPreviewImage](https://user-images.githubusercontent.com/90719979/153740099-337a0384-25fd-4f71-a3ad-f2e18355edc5.jpg)
+
+................................................................................................................................................................................
+
+
 
